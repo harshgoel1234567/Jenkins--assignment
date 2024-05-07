@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-07T16:44:56 IST" name="Surefire suite" finished-at="2024-05-07T16:45:18 IST" duration-ms="22578">
+    <groups>
+    </groups>
+    <test started-at="2024-05-07T16:44:56 IST" name="Surefire test" finished-at="2024-05-07T16:45:18 IST" duration-ms="22578">
+      <class name="tests.SearchTest">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:tests.SearchTest@71def8f8]" started-at="2024-05-07T16:44:56 IST" name="openApplication" finished-at="2024-05-07T16:45:09 IST" duration-ms="12674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="Searchfeature(java.lang.String)[pri:0, instance:tests.SearchTest@71def8f8]" started-at="2024-05-07T16:45:09 IST" name="Searchfeature" data-provider="getData" finished-at="2024-05-07T16:45:18 IST" duration-ms="9305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Laptop]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Searchfeature -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:tests.SearchTest@71def8f8]" started-at="2024-05-07T16:45:18 IST" name="closure" finished-at="2024-05-07T16:45:18 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closure -->
+      </class> <!-- tests.SearchTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

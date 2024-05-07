@@ -38,9 +38,9 @@ public class RemoveFromCartTest extends Base {
 		ProductPage p=new ProductPage(d);
 		
 		p.AddToCartButton().click();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 		p.CartButton().click();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 	
 		
 		CartPage c=new CartPage(d);
@@ -48,7 +48,7 @@ public class RemoveFromCartTest extends Base {
  		
  		c.Delete().click();
  		System.out.println(c.Subtotal().getText());
-// 		Thread.sleep(3000);
+	Thread.sleep(3000);
 // 		Assert.assertFalse(c.Checkout().isDisplayed());
  		
  		Assert.assertEquals(c.Subtotal().getText(),"Subtotal (0 items):");

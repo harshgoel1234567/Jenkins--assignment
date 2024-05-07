@@ -33,9 +33,9 @@ public class AddToCartTest extends Base{
 		ProductPage p=new ProductPage(d);
 		
 		p.AddToCartButton().click();
-//		Thread.sleep(3000);
+	    Thread.sleep(3000);
 		p.CartButton().click();
-//		Thread.sleep(3000);
+		Thread.sleep(3000);
 	
 		
 		CartPage c=new CartPage(d);

@@ -1,43 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="listeners.Listeners"/>
   </listeners>
-  <test parallel="tests" name="ProductQuantityTest(failed)">
-    <classes>
-      <class name="tests.ProductQuantityTest">
-        <methods>
-          <include name="openApplication"/>
-          <include name="AddToCarttest"/>
-          <include name="closure"/>
-        </methods>
-      </class> <!-- tests.ProductQuantityTest -->
-    </classes>
-  </test> <!-- ProductQuantityTest(failed) -->
-  <test parallel="tests" name="AddToCartTest(failed)">
-    <classes>
-      <class name="tests.AddToCartTest">
-        <methods>
-          <include name="openApplication"/>
-          <include name="AddToCarttest" invocation-numbers="0"/>
-          <include name="closure"/>
-        </methods>
-      </class> <!-- tests.AddToCartTest -->
-    </classes>
-  </test> <!-- AddToCartTest(failed) -->
-  <test parallel="tests" name="RemoveFromCartTest(failed)">
-    <classes>
-      <class name="tests.RemoveFromCartTest">
-        <methods>
-          <include name="openApplication"/>
-          <include name="RemoveFromCarttest" invocation-numbers="0"/>
-          <include name="closure"/>
-        </methods>
-      </class> <!-- tests.RemoveFromCartTest -->
-    </classes>
-  </test> <!-- RemoveFromCartTest(failed) -->
-  <test parallel="tests" name="SaveForLaterTest(failed)">
+  <test name="ProductQuantityTest(failed)">
     <classes>
       <class name="tests.SaveForLaterTest">
         <methods>
@@ -46,28 +13,20 @@
           <include name="openApplication"/>
         </methods>
       </class> <!-- tests.SaveForLaterTest -->
-    </classes>
-  </test> <!-- SaveForLaterTest(failed) -->
-  <test parallel="tests" name="Language(failed)">
-    <classes>
-      <class name="tests.LanguageTest">
+      <class name="tests.ProductQuantityTest">
         <methods>
-          <include name="closure"/>
           <include name="openApplication"/>
-          <include name="Languagetest" invocation-numbers="0"/>
+          <include name="AddToCarttest"/>
+          <include name="closure"/>
         </methods>
-      </class> <!-- tests.LanguageTest -->
-    </classes>
-  </test> <!-- Language(failed) -->
-  <test parallel="tests" name="Checkout(failed)">
-    <classes>
-      <class name="tests.CheckoutTest">
+      </class> <!-- tests.ProductQuantityTest -->
+      <class name="tests.RemoveFromCartTest">
         <methods>
-          <include name="closure"/>
           <include name="openApplication"/>
-          <include name="CheckoutTest" invocation-numbers="0"/>
+          <include name="RemoveFromCarttest" invocation-numbers="0"/>
+          <include name="closure"/>
         </methods>
-      </class> <!-- tests.CheckoutTest -->
+      </class> <!-- tests.RemoveFromCartTest -->
     </classes>
-  </test> <!-- Checkout(failed) -->
+  </test> <!-- ProductQuantityTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
